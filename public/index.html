@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html class="no-js">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        .esjen {
+            height: 100px;
+            width: 100px;
+            border: 1px solid black;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Hello meho</h1>
+    <p>we are wiritiangjhofjgbdgio</p>
+    <input id="inputo" type="" name="" value="" placeholder="upisi ime">
+    <button onclick="changeBtnNameToInputName(this)">Posalji</button>
+    <div id="nasdiv" class="esjen" onclick="changeBtnNameToInputName(this)">
+        esjen secjen
+    </div>
+</body>
+<script src="meho.js"></script>
+<script>
+    console.log('evno nassasassas')
+    console.log(meho)
+    meho.scream()
+
+    function changeBtnNameToInputName(el) {
+        let inputo = document.getElementById('inputo')
+        let text = inputo.value
+        console.log(text)
+        console.log(text.length)
+        meho.promjeniIme(el, text.length > 0 ? text : 'PRAAAAZAN')
+    }
+</script>
+
+</html>
